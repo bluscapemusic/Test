@@ -1,0 +1,131 @@
+body {
+    font-family: Montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: #ffffff;
+}
+
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/art/tct-cb.jpg') no-repeat center center/cover;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.home-link {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.home-link:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    flex: 1;
+    z-index: 1;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 16px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.release {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.album-cover {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.release-info {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.artist-name {
+    margin: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.album-name {
+    margin: 8px 0 0 0;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.release-date {
+    margin: 8px 0;
+    color: #ffffff;
+}
+
+.links {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #fff;
+    padding: 13px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+.spotify {
+    background-color: #1DB954;
+}
+
+.apple-music {
+    background-color: #FA233B;
+}
+
+.amazon-music {
+    background-color: #e38c09;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
